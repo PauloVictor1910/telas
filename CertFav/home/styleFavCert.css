@@ -1,0 +1,87 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menuBtn {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+}
+
+
+.menuIcon {
+    width: 212px;
+    height: 5px;
+    background-color: #333;
+    transition: 0.4s;
+    
+}
+
+.menuContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 1;
+}
+
+.menuContent {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 70px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.favoritos,
+.download {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favoritos img,
+.download img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.downloadBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}

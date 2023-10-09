@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagem/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css" href="botao.css">
+</head>
+<nav class="FixoNoTopo">
+    <img src="Imagem/logo01.png" alt="Logo" class="logo">
+    <ul class="menu"> 
+    <li><a href="#">Home</a></li>
+    <li><a href="telacurso.html">Cursos</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="sobre">Sobre</a></li>
+    <li><a href="cadastroCurso.html">Cadastre seu Curso</a></li>
+    </ul>
+</nav>
+<body>
+<style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        }
+
+        #menuBtn {
+        position: fixed;
+        top: 90px;
+        left: 20px;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18px;
+        margin-top: 100px;
+        }
+
+        #menuIcon {
+        width: 250px;
+        height: 5px;
+        background-color: #333;
+        transition: 0.4s;
+        margin-top: -57px;
+        border-radius: 4px;
+        }
+
+         #menuContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: none;
+        align-items: flex-start;
+        padding: 20px;
+        z-index: 1;
+        margin-top: 90px;
+        }
+
+        #menuContent {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        text-align: left;
+        margin-top: 25px;
+        width: 250px; 
+        height: 480px;
+        
+        }
+
+        #menuContent img {
+            width: 40px; 
+            height: auto; 
+            margin-right: 10px;
+            
+        
+        }
+
+        #perfil img {
+            width: 70px; 
+            height: auto; 
+            margin-left: -10px;
+            margin-top: -15px;
+            
+        }
+        
+        .perfilT{
+            text-align: center;
+            font-size: 5px;
+            font-family: 'Arial';
+            font-weight: bold
+        }
+
+    
+        .nomeUser {
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Arial', sans-serif;
+        margin-top: 100px;
+        margin-left: 20px;
+        text-decoration: double;
+        color: #333; 
+        }
+
+        .CertFav{
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Arial', sans-serif;
+        margin-top: -46px;
+        margin-left: 350px;
+        text-decoration: double;
+        color: #333; 
+        }
+
+        .campo {
+        margin-bottom: 10px;
+        }
+
+        .estrela {
+        color: #FFD700;
+        cursor:col-resize;
+        }
+
+        .columnMeio{
+            margin-left: 330px;
+            margin-top: -480px;
+        }
+
+        .columnDireito{
+            margin-left: 655px;
+            margin-top: -480px;
+        }
+
+        .favoritos,
+        .download {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 350px;
+            width: 935px; 
+            height: 100px;
+        }
+
+
+        .downloadBtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        
+</style>
+
+
+
+<div class="nomeUser">
+   <h1>Olá, Caio Domingues</h1> 
+</div>
+
+<div class="CertFav">
+    <h1>Certificados</h1>
+</div>
+
+<div id="menuBtn">
+    <div id="menuIcon"></div>
+</div>
+
+<main>
+    <div class="SearchBox active">
+      <input type="text" class="SearchBox-input" placeholder="Procure seu curso">
+      <button class="SearchBox-button">
+      <i class="SearchBox-icon  material-icons">search</i>
+      </button>
+    </div>
+</main>
+
+<div id="menuContainer">
+    <div id="menuContent">
+        <div id="perfil">
+        <div id="perfilT"><img src="Imagem/perfil.png" alt="Imagem 1">caio.dmg@gmail.com</div>
+        </div><br>
+        <br>
+        <div id="perfilT"><img src="Imagem/5974907.png" alt="Imagem 2"> Home </div> <br>
+        <br>
+        <div id="perfilT"><img src="Imagem/certificado.png" alt="Imagem 3"> Certificados </div> <br>
+        <br>
+        <div id="perfilT"><img src="Imagem/fav.png" alt="Imagem 4"> Favoritos </div> <br>
+        <br>
+        <div id="perfilT"><img src="Imagem/sair.png" alt="Imagem 5"> Sair </div> <br>
+
+    </div>
+</div>
+<script>
+    var menuBtn = document.getElementById('menuBtn');
+    var menuContainer = document.getElementById('menuContainer');
+
+    menuBtn.addEventListener('click', function() {
+
+        if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+            menuContainer.style.display = 'flex';
+        } else {
+            menuContainer.style.display = 'none';
+        }
+        menuBtn.classList.toggle('open');
+    });
+</script>
+
+
+
+<div class="download">
+    <p> Certificado</p>
+    <button class="downloadBtn">Download</button>
+</div>
+<div class="download">
+    <p> Certificado</p>
+    <button class="downloadBtn">Download</button>
+</div>
+<div class="download">
+    <p> Certificado</p>
+    <button class="downloadBtn">Download</button>
+</div>
+<div class="download">
+    <p> Certificado</p>
+    <button class="downloadBtn">Download</button>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagem/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css" href="botao.css">
+</head>
+<nav class="FixoNoTopo">
+    <img src="Imagem/logo01.png" alt="Logo" class="logo">
+    <ul class="menu"> 
+    <li><a href="#">Home</a></li>
+    <li><a href="telacurso.html">Cursos</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="sobre">Sobre</a></li>
+    <li><a href="cadastroCurso.html">Cadastre seu Curso</a></li>
+    </ul>
+</nav>
+ <div class="CertFav">
+     <h1>Favoritos</h1>
+ </div>
+ <main>
+     <div class="SearchBox active">
+       <input type="text" class="SearchBox-input" placeholder="Procure seu curso">
+       <button class="SearchBox-button">
+       <i class="SearchBox-icon  material-icons">search</i>
+       </button>
+     </div>
+ </main>
+<div class="container">
+<div class="curso">
+    <div class="campo">
+        <strong>xxxxxxxx</strong>
+    </div>
+    <div class="campo">
+        <strong>Descrição:</strong>
+    </div>
+    <div class="campo">
+        <strong>Progresso:</strong>
+    </div>
+</div>
+<div class="curso">
+    <div class="campo">
+        <strong>xxxxxxxx</strong>
+    </div>
+    <div class="campo">
+        <strong>Descrição:</strong>
+    </div>
+    <div class="campo">
+        <strong>Progresso:</strong>
+    </div>
+</div>
+<div class="curso">
+    <div class="campo">
+        <strong>xxxxxxxx</strong>
+    </div>
+    <div class="campo">
+        <strong>Descrição:</strong>
+    </div>
+    <div class="campo">
+        <strong>Progresso:</strong>
+    </div>
+</div>
+<div class="curso">
+    <div class="campo">
+        <strong>xxxxxxxx</strong>
+    </div>
+    <div class="campo">
+        <strong>Descrição:</strong>
+    </div>
+    <div class="campo">
+        <strong>Progresso:</strong>
+    </div>
+</div>
+</div>
+<div class="categoria">
+    <div class="nome">
+        <strong>xxxxxxxx</strong>
+    </div>
+    <div class="nome">
+        <strong>Descrição:</strong>
+    </div>
+    <div class="nome">
+        <strong>Progresso:</strong>
+    </div>
+<script>
+    var menuBtn = document.getElementById('menuBtn');
+    var menuContainer = document.getElementById('menuContainer');
+
+    menuBtn.addEventListener('click', function() {
+
+        if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+            menuContainer.style.display = 'flex';
+        } else {
+            menuContainer.style.display = 'none';
+        }
+        menuBtn.classList.toggle('open');
+    });
+</script>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.curso {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 480px; 
+    height: 150px;
+    margin-top: -60px; /* Ajuste aqui para o espaço desejado */
+}
+
+.curso:first-child {
+    margin-left: 100px; /* Ajuste aqui para o espaço desejado */
+}
+
+.categoria {
+    height: 150px;
+    width: 39%; /* Diminuindo a largura */
+    margin-top: -30px;
+    margin-left: 280px; /* Adicionando mais margem à esquerda */
+    padding: 20px; /* Reduzindo o espaço interno */
+    border: 1px solid #ccc; /* Adicionando uma borda */
+    background-color: #fff;
+}
+
+.nome {
+    font-size: 1.2rem; /* Aumentando o tamanho da fonte */
+    margin-bottom: 10px; /* Adicionando espaço entre as divs */
+}
+
+</style>
+</body>
+</html>
+
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de Busca</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http:/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#tabs" ).tabs();
+    } );
+    </script>
+  </head>
+  <nav>
+    <img src="Imagem/logo01.png" alt="Logo" class="logo">
+    <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Login</a></li>
+    <li><a href="#">Cadastro</a></li>
+    <li><a href="#">Sobre</a></li>
+    </ul>
+    <main>
+      <div class="SearchBox active">
+        <input type="text" class="SearchBox-input" placeholder="Procure seu curso">
+        <button class="SearchBox-button">
+        <i class="SearchBox-icon  material-icons">search</i>
+        </button>
+      </div>
+  </main>
+</nav>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botão de Menu Hambúrguer</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+    
+            #menuBtn {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                cursor: pointer;
+                z-index: 2;
+            }
+    
+            #menuIcon {
+                width: 30px;
+                height: 3px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+    
+            #menuContainer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+            }
+    
+            #menuContent {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <!-- Botão do Menu Hambúrguer -->
+    <div id="menuBtn">
+        <div id="menuIcon"></div>
+    </div>
+    
+    <!-- Contêiner do Menu -->
+    <div id="menuContainer">
+        <div id="menuContent">
+            <p>Item de menu 1</p>
+            <p>Item de menu 2</p>
+            <p>Item de menu 3</p>
+            <!-- Adicione mais itens de menu conforme necessário -->
+        </div>
+    </div>
+    
+    <script>
+        var menuBtn = document.getElementById('menuBtn');
+        var menuContainer = document.getElementById('menuContainer');
+    
+        // Adiciona um evento de clique ao botão do menu
+        menuBtn.addEventListener('click', function() {
+            // Alterna a visibilidade do contêiner do menu
+            if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+                menuContainer.style.display = 'flex';
+            } else {
+                menuContainer.style.display = 'none';
+            }
+    
+            // Alterna a aparência do ícone do menu (hambúrguer)
+            menuBtn.classList.toggle('open');
+        });
+    </script>
+    
+    </body>
+    </html>
+    
+    <h1 class="telacurso"> Todos dos Cursos </h1>
+    <div id="tabs">
+        <ul>
+          <li class="lis"><a href="#tabs-1">YYYYYYYY</a></li>
+          <li class="lis"><a href="#tabs-2">XXXXXXXX</a></li>
+          <li class="lis"><a href="#tabs-3">YYYYYYYY</a></li>
+          <li class="lis"><a href="#tabs-4">ZZZZZZZZ</a></li>
+          <li class="lis"><a href="#tabs-5">YYYYYYYY</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div id="tab0" class="tab-content">
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="botao">Inscreva - se</a></div>
+                </div> 
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="botao">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="botao">Inscreva - se</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2">
+            <div id="tab0" class="tab-content">
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div> 
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                    <h2>XXXXXXXXXX</h2>
+                      <div class="planOptionDetailText">XXXXXXX</div>
+                      <div class="planOptionDetailText">XXXXXXXXX</div>
+                      <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                  </div>
+            </div>
+        </div>
+        <div id="tabs-3">
+            <div id="tab0" class="tab-content">
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div> 
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                    <h2>XXXXXXXXXX</h2>
+                      <div class="planOptionDetailText">XXXXXXX</div>
+                      <div class="planOptionDetailText">XXXXXXXXX</div>
+                      <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                  </div>
+            </div>
+        </div>
+        <div id="tabs-4">
+            <div id="tab0" class="tab-content">
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div> 
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                    <h2>XXXXXXXXXX</h2>
+                      <div class="planOptionDetailText">XXXXXXX</div>
+                      <div class="planOptionDetailText">XXXXXXXXX</div>
+                      <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                  </div>
+            </div>
+        </div>
+        <div id="tabs-5">
+            <div id="tab0" class="tab-content">
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div> 
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+                <div class="planColumn">
+                  <h2>XXXXXXXXXX</h2>
+                    <div class="planOptionDetailText">XXXXXXX</div>
+                    <div class="planOptionDetailText">XXXXXXXXX</div>
+                    <div class="planSignup"><a href="#" class="btn-orange">Inscreva - se</a></div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
